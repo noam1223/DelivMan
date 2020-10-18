@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".Restaurant.RestaurantLogin"
+    android:background="@color/colorGreyBackground">
+
+
+    <RelativeLayout
+        android:id="@+id/area_img_text_relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restaurant"
+        android:layout_centerInParent="true"
+        android:textColor="#ffffff"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:elevation="100dp"/>
+
+    <ImageView
+        android:id="@+id/image_view_activity_restaurant_login"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/shanhai"
+        android:scaleType="centerCrop"
+        />
+
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/Ress_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Restaurant Name"
+        android:text="Haim"
+        android:inputType="textPersonName"
+        android:layout_below="@id/area_img_text_relative_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+
+    <EditText
+        android:id="@+id/Ress_Pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="14141414"
+        android:hint="Enter Password"
+        android:inputType="numberPassword"
+        android:layout_below="@id/Ress_Name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+
+
+    <Button
+        android:id="@+id/Ress_Log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/Ress_Pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_button_4"/>
+
+
+
+
+    <Button
+        android:id="@+id/SingUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SingUp"
+        android:layout_below="@id/Ress_Log"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_button_4"/>
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar_restaurant_loging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:visibility="gone"/>
+
+
+
+
+</RelativeLayout>

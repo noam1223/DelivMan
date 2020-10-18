@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Restaurant.Restaurant_Main"
+    android:background="@color/colorGreyBackground"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/Res_Name"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:orientation="vertical"
+        android:background="@drawable/squre_back">
+
+        <Button
+            android:id="@+id/log_out_btn_restaurant"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="logout"
+            android:background="@drawable/custom_button_4"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="2dp"/>
+
+
+        <TextView
+            android:id="@+id/Show_Restau_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/RestaurantName"
+            android:textColor="#F8F5F5"
+            android:textSize="50dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_conteiner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Res_Name"
+        android:layout_above="@id/navBotton"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navBotton"
+        android:layout_width="408dp"
+        android:layout_height="54dp"
+        android:background="#F7FCFA"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/try2"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

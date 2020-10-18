@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorGreyBackground">
+
+
+    <ImageView
+        android:id="@+id/image_view_activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/shanhai"/>
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Platform"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/image_view_activity_main" />
+
+
+
+    <Button
+        android:id="@+id/Restaurant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restaurant"
+        android:layout_below="@id/textView"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/custom_button_4"/>
+
+
+
+    <Button
+        android:id="@+id/Deliver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deliver"
+        android:layout_below="@id/Restaurant"
+       android:layout_marginTop="16dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/custom_button_4"/>
+
+
+
+</RelativeLayout>

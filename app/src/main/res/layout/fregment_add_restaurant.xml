@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreyBackground">
+
+    <ProgressBar
+        android:id="@+id/progress_bar_add_frag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/del_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone"/>
+
+
+    <LinearLayout
+        android:id="@+id/address_floor_apartment_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_below="@id/del_phone"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+
+    <EditText
+        android:id="@+id/del_adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:ems="10"
+        android:layout_marginTop="12dp"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        />
+
+
+        <EditText
+            android:id="@+id/del_floor"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="6dp"
+            android:hint="Floor"
+            android:inputType="number"
+            />
+
+
+        <EditText
+            android:id="@+id/del_apartment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="6dp"
+            android:hint="Apartment"
+            android:inputType="number"
+            />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/del_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/address_floor_apartment_linear_layout"
+        android:ems="10"
+        android:hint="Enter Price"
+        android:inputType="number" />
+
+
+    <ImageButton
+        android:id="@+id/newDel"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/ic_add_circle_black_24dp" />
+
+</RelativeLayout>

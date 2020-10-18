@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/total_deliveries_delivered_item"
+        android:icon="@drawable/ic_assessment_black_24dp"
+        android:title="Data" />
+    <item
+        android:id="@+id/list_of_deliveries_item"
+        android:icon="@drawable/ic_list_black_24dp"
+        android:title="Delivery list" />
+
+</menu>
